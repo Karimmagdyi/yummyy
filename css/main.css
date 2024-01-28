@@ -1,0 +1,171 @@
+body{
+    background-color: #000;
+    overflow: hidden;
+}
+#sidebar{
+    min-height: 100vh;
+    position: relative;
+     display: flex;
+     position: fixed;
+     z-index: 999;
+     overflow: hidden;
+}
+.leftside{
+    background-color: #000;
+    width: 300px;
+    padding-inline: 20px;
+    padding-block: 15px;
+    display: none;
+    
+}
+.login{
+    /* height: 100vh; */
+    
+}
+.leftside a{
+    color: #fff;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-block: 10px;
+    display: inline-block;
+    width: 100%;
+}
+.footer i{
+    color: #fff;
+ }
+.footer{
+ position: absolute;
+ bottom: 0;
+ white-space: nowrap;
+}
+.rightside{
+    padding-left: 10px;
+}
+.item{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.layer{
+    background-color: #f5f0edb4;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: all  0.7s;
+    overflow: hidden;
+   
+}
+.layerP{
+  
+}
+.item:hover .layer{
+    top: 0;
+}
+.layer h4{
+    padding-left: 10px;
+}
+.meal h2{
+font-size: 32px;
+color: #fff;
+}
+.mealContent h2{
+font-size: 32px;
+}
+.mealContent a{
+    color: #fff;
+}
+.mealContent li{
+    list-style-type: none;
+    font-size: 16px;
+    padding-inline: 10px;
+}
+#category ,#contactUs ,#area ,#ingredient ,#search{
+    color: #fff;
+}
+::placeholder{
+    color:white !important;
+}
+ input::placeholder{
+    color: #6C9DCD!important;
+}
+button{
+    /* margin-top: -400px;
+    margin-left: -40px; */
+    border: 1px solid #932831 !important;
+    color: #932831 !important;
+}
+.loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    width: 50px;
+    height: 165px;
+    position: relative;
+  }
+  .loader::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50% , 0);
+    width: 16px;
+    height: 16px;
+    background: #FF3D00;
+    border-radius: 50%;
+    animation: bounce 2s linear infinite;
+  }
+  .loader::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 48px;
+    width: 48px;
+    background: #fff;
+    border-radius: 4px;
+    animation: rotate 2s linear infinite;
+  }
+  
+  @keyframes bounce {
+    0% , 50% , 100%{
+      transform: translate(-50%, 0px);
+      height: 20px;
+    }
+    20% {
+      transform: translate(-25%, 85px);
+      height: 28px;
+    }
+    25% {
+      transform: translate(-25%, 110px);
+      height: 12px;
+    }
+    70% {
+      transform: translate(-75%, 85px);
+      height: 28px;
+    }
+    75% {
+      transform: translate(-75%, 108px);
+      height: 12px;
+    }
+  }
+  @keyframes rotate {
+    0% , 50% , 100%{ transform: rotate(0deg)}
+    25% { transform: rotate(90deg)}
+    75%{ transform: rotate(-90deg)}
+  }
+    
